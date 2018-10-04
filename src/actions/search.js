@@ -15,7 +15,6 @@ var handleVideoSearch = (q) => {
   //make a request to youtube server using query
   return (dispatch) => {
     searchYouTube({key: YOUTUBE_API_KEY, query: q}, (data) => {
-      console.log(data);
       dispatch(changeVideoList(data));
       dispatch(changeVideo(data[0]));
     });
