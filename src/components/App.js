@@ -24,6 +24,8 @@ export default class App extends React.Component {
   }
 
   handleVideoListEntryTitleClick(video) {
+    //Step 1. Send new video info to store in an action with a dispatch --  update the state
+    //Step 2. Within our app, we need to get a copy of the new state (with dispatch), which we can use w/setState to check if our pointers to the state have to be updated
     this.setState({currentVideo: video});
   }
 

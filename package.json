@@ -6,9 +6,9 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "test": "live-server --open=./SpecRunner.html --port=8081",
+    "test": "npm run compiled | npm run build | live-server --open=./SpecRunner.html --port=8081",
     "run": "npm run compiled | live-server --open=./index.html --port=8080",
-    "compiled": "babel . --out-dir compiled --presets=react --ignore=node_modules,compiled --source-maps inline -w",  
+    "compiled": "babel . --out-dir com  piled --presets=react --ignore=node_modules,compiled --source-maps inline -w",  
     "build": "webpack -d --watch",
     "server": "live-server",
     "start": "npm run compiled | npm run build | npm run server"
