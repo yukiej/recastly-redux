@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 var VideoListEntry = ({video, handleVideoListEntryTitleClick}) => (
   <div className="video-list-entry">
     <div className="media-left media-middle">
