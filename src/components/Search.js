@@ -1,12 +1,14 @@
 import React from 'react';
+//import handleVideoSearch from '../actions/search.js'
+
  
 class Search extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      value: ''
-    };
+    // this.state = {
+    //   value: ''
+    //};
   }
 
   // handleInputChange(e) {
@@ -22,8 +24,9 @@ class Search extends React.Component {
         <input
           className="form-control"
           type="text"
-          value={this.state.value}
-          onChange={(e) => handleSearchInputChange(e.target.value)}
+          //value={this.state.value}
+          onChange={(e) => this.props.handleSearchInputChange(e.target.value)}
+          //onChange={(e) => console.log(e.target.value)}
         />
         <button className="btn hidden-sm-down">
           <span className="glyphicon glyphicon-search"></span>

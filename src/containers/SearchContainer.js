@@ -12,7 +12,7 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
   handleSearchInputChange: (q) => dispatch(handleVideoSearch(q)) 
 })
 
-const SearchContainer = connect(null, mapDispatchToProps)(Search);
+const SearchContainer = connect(mapStateToProps, mapDispatchToProps)(Search);
 
 
 //TODO: define a SearchContainer component which will hook up your action

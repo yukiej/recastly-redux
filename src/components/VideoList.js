@@ -6,7 +6,7 @@ var VideoList = ({videos, handleVideoListEntryTitleClick}) => (
   <div className="video-list">
     {
       videos.map(video => (
-        <VideoListContainer
+        <VideoListEntry
           key={video.etag}
           video={video}
           handleVideoListEntryTitleClick={handleVideoListEntryTitleClick}
